@@ -58,7 +58,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           port: ${{ secrets.EC2_PORT }}
-          fingerprint: ${{ secrets.EC2_HOST_FINGERPRINT }}
+          # fingerprint: ${{ secrets.EC2_HOST_FINGERPRINT }}
           envs: DEPLOY_SHA
           script: |
             set -e
