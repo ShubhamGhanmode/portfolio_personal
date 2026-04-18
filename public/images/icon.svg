@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Primary gradient (purple to cyan) -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D946EF"/>
+      <stop offset="100%" style="stop-color:#06B6D4"/>
+    </linearGradient>
+    
+    <!-- Secondary gradient (cyan to blue) -->
+    <linearGradient id="secondaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4"/>
+      <stop offset="100%" style="stop-color:#3B82F6"/>
+    </linearGradient>
+    
+    <!-- Material Design shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Subtle inner shadow for depth -->
+    <filter id="shadowSmall" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Dark background -->
+  <rect width="512" height="512" fill="#121212"/>
+  
+  <!-- Main icon container - rounded square card -->
+  <g transform="translate(256, 200)">
+    
+    <!-- Background card with shadow -->
+    <rect x="-120" y="-120" width="240" height="240" rx="32" 
+          fill="#1E1E1E" filter="url(#shadow)"/>
+    
+    <!-- Gradient accent bar at top of card -->
+    <!-- <rect x="-120" y="-120" width="240" height="8" rx="4" 
+          fill="url(#primaryGrad)"/> -->
+    
+    <!-- Stylized "F" letter - clean geometric design -->
+    <g transform="translate(-60, -70)">
+      
+      <!-- Vertical stem of F -->
+      <rect x="0" y="0" width="40" height="160" rx="6" 
+            fill="url(#primaryGrad)" filter="url(#shadowSmall)"/>
+      
+      <!-- Top horizontal bar of F -->
+      <rect x="30" y="0" width="100" height="36" rx="6" 
+            fill="url(#secondaryGrad)" filter="url(#shadowSmall)"/>
+      
+      <!-- Middle horizontal bar of F (shorter) -->
+      <rect x="30" y="62" width="70" height="32" rx="6" 
+            fill="#06B6D4" filter="url(#shadowSmall)"/>
+      
+    </g>
+    
+    <!-- Small accent dot -->
+    <circle cx="70" cy="70" r="12" fill="#D946EF" opacity="0.8"/>
+    
+  </g>
+  
+  <!-- FolioCraft Text -->
+  <text x="256" y="420" 
+        font-family="'Roboto', 'Segoe UI', system-ui, -apple-system, sans-serif" 
+        font-size="48" 
+        font-weight="700" 
+        fill="#FFFFFF" 
+        text-anchor="middle" 
+        letter-spacing="1">
+    FolioCraft
+  </text>
+  
+  <!-- Subtle tagline -->
+  <text x="256" y="455" 
+        font-family="'Roboto', 'Segoe UI', system-ui, -apple-system, sans-serif" 
+        font-size="16" 
+        font-weight="400" 
+        fill="#9CA3AF" 
+        text-anchor="middle" 
+        letter-spacing="3">
+    DEVELOPER PORTFOLIO
+  </text>
+  
+</svg>
